@@ -11,8 +11,9 @@ vae = VAEModel()
 
 @app.route('/api/generate_easy_grid', methods=['GET'])
 def generate_easy_grid():
-    grid = vae.generate_grid(level="easy", shape=(3, 5))
-    return jsonify({"grid": grid.tolist()})
+    # grid = vae.generate_grid(level="easy", shape=(3, 5))
+    # return jsonify({"grid": grid.tolist()})
+    return jsonify({"message": "Easy grid API working!"})
 
 @app.route('/api/generate_medium_grid', methods=['GET'])
 def generate_medium_grid():
