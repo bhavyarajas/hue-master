@@ -4,7 +4,7 @@ import numpy as np
 from models.vae import VAEModel
 
 app = Flask(__name__)
-CORS(app)  # Allow React frontend to make requests
+CORS(app, resources={r"/api/*": {"origins": "https://hue-master-one.vercel.app"}})
 
 # Load the trained model
 vae = VAEModel()
