@@ -24,5 +24,8 @@ def generate_hard_grid():
     grid = vae.generate_grid(level="hard", shape=(6, 8))
     return jsonify({"grid": grid.tolist()})
 
+# if __name__ == '__main__':
+#     app.run(debug=True)
+    
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=10000)
