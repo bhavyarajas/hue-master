@@ -118,8 +118,8 @@ function EasyLevel() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // const response = await axios.get('http://127.0.0.1:5000/api/generate_easy_grid');
-        const response = await axios.get("https://your-backend.onrender.com/api/generate_easy_grid");
+        const response = await axios.get('/api/generate_easy_grid');
+        // const response = await axios.get("https://your-backend.onrender.com/api/generate_easy_grid");
         setGridData(response.data.grid);
         setIsGridFetched(true);
       } catch (error) {
@@ -223,8 +223,8 @@ function MediumLevel() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // const response = await axios.get('http://127.0.0.1:5000/api/generate_medium_grid');
-        const response = await axios.get("https://your-backend.onrender.com/api/generate_medium_grid");
+        const response = await axios.get('/api/generate_medium_grid');
+        // const response = await axios.get("https://your-backend.onrender.com/api/generate_medium_grid");
         setGridData(response.data.grid);
         setIsGridFetched(true);
       } catch (error) {
@@ -328,8 +328,8 @@ function HardLevel() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // const response = await axios.get('http://127.0.0.1:5000/api/generate_hard_grid');
-        const response = await axios.get("https://your-backend.onrender.com/api/generate_hard_grid");
+        const response = await axios.get('/api/generate_hard_grid');
+        // const response = await axios.get("https://your-backend.onrender.com/api/generate_hard_grid");
         setGridData(response.data.grid);
         setIsGridFetched(true);
       } catch (error) {
