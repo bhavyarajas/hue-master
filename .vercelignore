@@ -1,0 +1,18 @@
+backend/**
+!backend/models/__init__.py
+
+# ignore Python caches & virtualenvs
+**/__pycache__/
+**/*.pyc
+venv/
+.env
+
+# ignore Git & tooling
+.git/
+*.log
+
+# ignore your local React build (Vercel will generate it)
+frontend/build/
+
+# ignore node_modules (Vercel installs these itself)
+frontend/node_modules/
