@@ -44,13 +44,6 @@ class VAEModel:
         decoder = Model(decoder_input, outputs, name="decoder")
 
         return encoder, decoder
-
-    # def generate_grid(self, level="easy"):
-    #     """Generate a game level grid based on the VAE model."""
-    #     difficulty_mapping = {"easy": 1, "medium": 5, "hard": 10}
-    #     noise = np.random.normal(size=(1, self.latent_dim)) * difficulty_mapping[level]
-    #     generated_grid = self.decoder.predict(noise)
-    #     return (generated_grid[0, :, :, 0] * 255).astype(int)  # Convert to integer pixel values
     
     def generate_grid(self, level="easy", shape=(3, 5)):
         # Generate a game level grid based on the VAE model and difficulty level.   
